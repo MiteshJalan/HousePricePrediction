@@ -4,7 +4,7 @@ import util
 app = Flask(__name__)
 @app.route('/')
 def index():
-    return render_template('..\client\app.html') 
+    return render_template('app.html') 
 
 @app.route('/get_location_names', methods=['GET'])
 def get_location_names():
