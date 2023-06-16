@@ -28,8 +28,8 @@ function onClickedEstimatePrice() {
   var host = window.location.host;
   
   // Construct the URL based on the host
-  var url = "http://" + host + "//predict_home_price";
- 
+  // var url = "http://" + host + "/get_location_names";
+  var url = "http://127.0.0.1:5000/predict_home_price"; 
   //Use this if you are NOT using nginx 
   // var url = "/api/predict_home_price"; // Use this if using nginx.
   $.post(url, {
@@ -47,10 +47,11 @@ function onClickedEstimatePrice() {
 function onPageLoad() {
   console.log( "document loaded" );
   // Get the current host name and port dynamically
-  var host = window.location.host;
+  // var host = window.location.host;
   
   // Construct the URL based on the host
-  var url = "http://" + host + "/get_location_names";
+  // var url = "http://" + host + "/get_location_names";
+  var url = "http://127.0.0.1:5000/get_location_names"
   // var url = "/api/get_location_names"; // Use this if  you are using nginx. i.e tutorial 8 and onwards
   $.get(url,function(data, status) {
       console.log("got response for get_location_names request");
