@@ -1,7 +1,8 @@
-#Access Link
+# Access Link
 To access the live version of the house price prediction web application, click the link below:
+'''
 [House Price Prediction Web App](https://house-price-banglore-portal.onrender.com)
-
+'''
 # House Price Prediction
 
 This project aims to develop a web application for house price prediction, providing accurate and intuitive predictions for potential home buyers or sellers. The application utilizes machine learning models trained on a house price dataset, along with data cleaning, outlier detection, and exploratory data analysis (EDA) techniques to ensure accurate predictions and reliable results.
