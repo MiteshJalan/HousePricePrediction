@@ -1,3 +1,6 @@
+#Access Link
+To access the live version of the house price prediction web application, click the link below:
+[House Price Prediction Web App](https://house-price-banglore-portal.onrender.com)
 
 # House Price Prediction
 
@@ -22,10 +25,8 @@ This project aims to develop a web application for house price prediction, provi
 - Machine Learning (scikit-learn, pandas, numpy)
 - Data Visualization (matplotlib, seaborn)
 
-## Screenshots and Access Link
-To access the live version of the house price prediction web application, click the link below:
+## Screenshots
 
-[House Price Prediction Web App](https://house-price-banglore-portal.onrender.com)
 
 Here is the Screenshot of the working website:
 
