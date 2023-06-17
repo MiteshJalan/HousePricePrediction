@@ -22,15 +22,16 @@ This project aims to develop a web application for house price prediction, provi
 - Machine Learning (scikit-learn, pandas, numpy)
 - Data Visualization (matplotlib, seaborn)
 
-## Screenshots
-
-Here are some screenshots from the Space Wars game:
-
-![Screenshot 1](model/Screenshot.png)
-
+## Screenshots and Access Link
 To access the live version of the house price prediction web application, click the link below:
 
 [House Price Prediction Web App](https://house-price-banglore-portal.onrender.com)
+
+Here is the Screenshot of the working website:
+
+![Screenshot 1](model/Screenshot.png)
+
+
 
 Simply click the link above and it will take you directly to the web application where you can start using it to estimate house prices.
 
