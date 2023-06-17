@@ -22,6 +22,12 @@ This project aims to develop a web application for house price prediction, provi
 - Machine Learning (scikit-learn, pandas, numpy)
 - Data Visualization (matplotlib, seaborn)
 
+## Screenshots
+
+Here are some screenshots from the Space Wars game:
+
+![Screenshot 1](/ScreenShots/ScreenshotS.jpg)
+
 ## Usage
 
 1. Clone the repository:
