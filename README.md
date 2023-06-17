@@ -26,7 +26,7 @@ This project aims to develop a web application for house price prediction, provi
 
 Here are some screenshots from the Space Wars game:
 
-![Screenshot 1](/model/Screenshot 2023-06-17 125321.png)
+![Screenshot 1](model/Screenshot.png)
 
 To access the live version of the house price prediction web application, click the link below:
 
