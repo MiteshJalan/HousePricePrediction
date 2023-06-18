@@ -1,3 +1,7 @@
 Flask
 numpy
 scikit-learn
+flask_wtf
+flask_login
+pandas
+matplotlib

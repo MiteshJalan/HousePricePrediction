@@ -1,14 +1,17 @@
-<!DOCTYPE html>
-<html>
+{% extends "base.html" %} {% block title %}Banglore Home Price Prediction{% endblock %} 
 <head>
+	{% block title %}
     <title>Banglore Home Price Prediction</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="{{url_for('static', filename='js/app.js')}}"></script>
-	<link rel= "stylesheet" href= "{{ url_for('static',filename='css/app.css')}}">
+	<link rel= "stylesheet" href= "{{ url_for('static',filename='css/app.css')}}">{% endblock %}
 	<!-- <link rel="stylesheet" href="app.css"> -->
 </head>
 <body>
+	{% block content
+		%}
 <div class="img"></div>
+
 <form class="form">
 	<h2>Area (Square Feet)</h2>
     <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
@@ -50,5 +53,6 @@
 </div>
 	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
 	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+	{% endblock %}
 </body>
 </html>
