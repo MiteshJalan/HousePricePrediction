@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}House Price Prediction{% endblock %}
+
+{% block content %}
+    <style>
+        header, section{
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+        }
+    </style>
+
+    <header>
+        <h1>House Price Prediction</h1>
+        <p>This project aims to develop a web application for house price prediction, providing accurate and intuitive predictions for potential home buyers or sellers. The application utilizes machine learning models trained on a house price dataset, along with data cleaning, outlier detection, and exploratory data analysis (EDA) techniques to ensure accurate predictions and reliable results.</p>
+    </header>
+
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li>Data cleaning and preprocessing: Conducted data cleaning to handle missing values and inconsistencies in the house price dataset. Preprocessed the data to make it suitable for machine learning models.</li>
+            <li>Outlier detection: Identified and handled outliers in the dataset to improve the robustness of the models.</li>
+            <li>Exploratory data analysis (EDA): Performed EDA to gain insights into the dataset, visualize patterns, and identify relevant features for the prediction task.</li>
+            <li>Model training and selection: Trained various machine learning models on the dataset, including regression algorithms such as linear regression, decision tree regression, and random forest regression. Evaluated and selected the most robust and consistent performing model based on cross-validation scores.</li>
+            <li>Web application development: Designed and developed a user-friendly web application using Flask, HTML, CSS, and JavaScript. Integrated the trained house price prediction model with the web app to deliver an intuitive interface for accurate estimation.</li>
+            <li>Real-time prediction: Allows users to input relevant features of a house (such as area, number of rooms, location, etc.) through the web app and receive real-time predictions on the estimated price.</li>
+        </ul>
+    </section>
+
+    <section id="technologies">
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>Python</li>
+            <li>Flask</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Machine Learning (scikit-learn, pandas, numpy)</li>
+            <li>Data Visualization (matplotlib, seaborn)</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2023 House Price Prediction. All rights reserved.</p>
+    </footer>
+{% endblock %}
