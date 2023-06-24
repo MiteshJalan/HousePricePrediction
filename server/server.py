@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template, redirect,url_for
+from flask import Flask, request, jsonify, render_template, redirect,url_for, session
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 import util
@@ -30,7 +30,7 @@ def load_user(user_id):
 
 
 #define user password database
-class User(db.Model,UserMixin):
+class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(20), nullable=False, unique=True)
     password = db.Column(db.String(80), nullable=True)
@@ -55,7 +55,9 @@ class LoginForm(FlaskForm):
 @app.route('/home')
 @login_required
 def home():
-    return render_template("app.html") 
+    if "user" in session:
+        user = session["user"]
+        return render_template("app.html", username=user)
 
 @app.route('/', methods=['GET', 'POST'])
 def login():
@@ -65,7 +67,8 @@ def login():
         if user:
             if bcrypt.check_password_hash(user.password, form.password.data):
                 login_user(user)
-                return redirect(url_for('home',usr=user))
+                session["user"]=user.username
+                return redirect(url_for('home'))
     return render_template('login.html', form=form)
 
 @app.route('/dashboard', methods=['GET', 'POST'])
@@ -77,6 +80,7 @@ def dashboard():
 @login_required
 def logout():
     logout_user()
+    session.pop("user", None)
     return redirect(url_for('login'))
 
 
