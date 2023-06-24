@@ -53,7 +53,7 @@ function onPageLoad() {
   // Construct the URL based on the host
   // var url = "http://" + host + "/get_location_names";
   // var url = "http://127.0.0.1:5000/get_location_names"
-  var url = "https://house-price-banglore-portal.onrender.com/predict_home_price"; 
+  var url = "https://house-price-banglore-portal.onrender.com/get_location_names"; 
   // var url = "/api/get_location_names"; // Use this if  you are using nginx. i.e tutorial 8 and onwards
   $.get(url,function(data, status) {
       console.log("got response for get_location_names request");
