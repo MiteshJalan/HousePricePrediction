@@ -9,8 +9,14 @@
 </head>
 
 <body>
+    <div class="collapse navbar-collapse" id="navbar">
+    <div class="navbar-nav">
+    <a class="nav-item nav-link" id="logout" href="{{ url_for('logout') }}">Logout</a>
+    </div>
+    </div>
     <h1>Hello you are logged in.</h1>
     <a href="{{url_for('home')}}">Press here to go to House Price App</a>
+    
 </body>
 
 </html>
