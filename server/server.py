@@ -126,4 +126,4 @@ if __name__ == "__main__":
     #     print(f"Error occurred during table creation: {e}")
     print("Starting Python Flask Server For Home Price Prediction...")
     util.load_saved_artifacts()
-    app.run()
+    app.run(host='0.0.0.0')
