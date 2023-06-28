@@ -1,23 +1,50 @@
 {% extends 'base.html' %}
 {% block title %}Login{% endblock %}
 
+{% block styles %}
+<style>
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .login-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    top: 100px;
+  }
+
+  .login-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  
+  }
+</style>
+{% endblock %}
+
 {% block content %}
-  <div class="container">
-    <div class="mt-5">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 login-container">
+      <h1>Login</h1>
       <form method="POST" action="">
         {{ form.hidden_tag() }}
         <div class="mb-3">
-          {{ form.username.label }} {{ form.username }}
+          <label for="{{ form.username.id_for_label }}" class="form-label">Username</label>
+          {{ form.username(class="form-control") }}
         </div>
         <div class="mb-3">
-          {{ form.password.label }} {{ form.password }}
+          <label for="{{ form.password.id_for_label }}" class="form-label">Password</label>
+          {{ form.password(class="form-control") }}
         </div>
         <div class="mb-3">
-          {{ form.submit }}
+          {{ form.submit(class="btn btn-primary") }}
         </div>
       </form>
-
       <p>Don't have an account? <a href="{{ url_for('signup') }}">Sign Up</a></p>
     </div>
   </div>
+</div>
 {% endblock %}
