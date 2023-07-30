@@ -236,7 +236,7 @@ def login():
             if bcrypt.check_password_hash(user.password, form.password.data):
                 login_user(user)
                 session["user"]=user.username
-                return redirect(url_for('home'))
+                return redirect(url_for('index'))
     return render_template('login.html', form=form)
 
 @app.route('/home')
@@ -392,6 +392,8 @@ def index():
         db.session.commit()
         flash('Your post is now live!')
         return redirect(url_for('index'))
+    
+    
     # posts = [
     #     {
     #         'author': {'username': 'John'},
@@ -402,6 +404,7 @@ def index():
     #         'body': 'The Avengers movie was so cool!'
     #     }
     # ]
+
     # posts = current_user.followed_posts().all()
     # return render_template("index.html", title='Home Page', form=form,
     #                        posts=posts)
