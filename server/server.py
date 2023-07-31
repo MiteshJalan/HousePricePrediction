@@ -36,6 +36,13 @@ SQLALCHEMY_TRACK_MODIFICATIONS = False
 db = SQLAlchemy(app)
 bcrypt=Bcrypt(app)
 migrate = Migrate(app, db)
+<<<<<<< Updated upstream
+=======
+
+socketio = SocketIO(app)
+
+
+>>>>>>> Stashed changes
 
 #_________________________User Auth________________________________
 
@@ -542,4 +549,9 @@ if __name__ == "__main__":
     util.load_saved_artifacts()
     db.init_app(app)
     migrate.init_app(app, db)
+<<<<<<< Updated upstream
     app.run(debug=True,host='0.0.0.0')
+=======
+    # app.run(debug=True,host='0.0.0.0')
+    socketio.run(app, debug=True, host='0.0.0.0')
+>>>>>>> Stashed changes
