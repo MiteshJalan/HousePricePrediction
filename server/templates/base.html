@@ -22,8 +22,17 @@
         <div class="navbar-nav">
           <a class="nav-item nav-link" id="home" href="{{ url_for('dashboard') }}">Home</a>
           {% if current_user.is_authenticated %}
+<<<<<<< Updated upstream
           <a class="nav-item nav-link" id="username" href="home">{{ current_user.username }}</a>
           <a class="nav-item nav-link" id="logout" href="{{ url_for('logout') }}">Logout</a>
+=======
+          <a class="nav-item nav-link" id="username" href={{url_for('home')}}>Prediction</a>
+          <a class="nav-item nav-link" id="explore" href="{{ url_for('explore') }}">Explore</a>
+          <a class="nav-item nav-link" id="index" href="{{ url_for('index') }}">Create_Post</a>
+          <a class="nav-item nav-link" id="userprofile" href="{{ url_for('user', username=current_user.username)}}">{{ current_user.username }}</a>
+          <a class="nav-item nav-link" id="logout" href="{{ url_for('joinroom')}}">JoinRoom</a>
+          <a class="nav-item nav-link" id="logout" href="{{ url_for('logout')}}">Logout</a>
+>>>>>>> Stashed changes
           {% else %}
           <a class="nav-item nav-link" id="login" href="{{ url_for('login') }}">Login</a>
           <a class="nav-item nav-link" id="signup" href="{{ url_for('signup') }}">Sign Up</a>

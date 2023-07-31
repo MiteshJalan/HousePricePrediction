@@ -44,4 +44,10 @@
     </div>
   </div>
 </div>
+{% if error %}
+  <ul>
+    <li>{{error}}</li>
+  </ul>
+  {% endif %}
+
 {% endblock %}
