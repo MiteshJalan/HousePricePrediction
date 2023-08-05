@@ -1,7 +1,12 @@
 # Access Link
 click the link below:
+Newer Version
+[HouseX Web App](https://housex.onrender.com/index)
+
+
 Older Version:
 [HouseX Web App](https://house-price-banglore-portal.onrender.com)
+
 
 
 # HouseX
