@@ -42,9 +42,6 @@ migrate = Migrate(app, db)
 
 socketio = SocketIO(app)
 
-
-
-
 #_________________________User Auth________________________________
 
 login_manager = LoginManager()
