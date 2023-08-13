@@ -272,7 +272,7 @@ def signup():
         new_user = User(username=form.username.data, password=hashed_password)
         db.session.add(new_user)
         db.session.commit()
-        return render_template(url_for('login'))
+        return redirect(url_for('login'))
     return render_template('signup.html', form=form)
 
 @app.route('/get_location_names', methods=['GET'])
