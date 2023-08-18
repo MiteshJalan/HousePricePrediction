@@ -39,8 +39,11 @@ This project aims to develop a web application for house price prediction, provi
 Here is the Screenshot of the working website:
 
 ![Screenshot 1](model/Screenshot.png)
-![Screenshot 1](model/Screenshot (64).png)
-![Screenshot 1](model/Screenshot (65).png)
+![Screenshot 2](model/Screenshot(64).png)
+![Screenshot 3](model/Screenshot(65).png)
+![Screenshot 4](model/Screenshot(66).png)
+![Screenshot 5](model/Screenshot(67).png)
+![Screenshot 6](model/Screenshot(68).png)
 
 Simply click the link above and it will take you directly to the web application where you can start using it to estimate house prices.
 
